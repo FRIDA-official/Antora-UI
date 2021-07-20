@@ -10,7 +10,7 @@ footer.footer {
   margin: 0.5rem 0;
 }
 
-.footer {
+.footer div{
   display: inline-block;
   align-items: center;
   margin-left: auto;
