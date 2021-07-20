@@ -10,6 +10,9 @@ footer.footer {
   margin: 0.5rem 0;
 }
 
+.footer .container {
+  max-width: 1120px
+}
 .footer a {
   color: var(--footer-link-font-color);
 }
