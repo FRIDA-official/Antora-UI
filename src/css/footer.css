@@ -6,6 +6,9 @@ footer.footer {
   padding: 1.5rem;
 }
 
+body {
+  text-align: justify;
+}
 .footer p {
   margin: 0.5rem 0;
 }
