@@ -11,8 +11,9 @@ jobs:
         run: |
             npm install --global gulp-cli
             npm install --save-dev gulp
-            gulp bundle
             ls
+            gulp bundle
+            
       - name: Add files
         run: | 
           git add ./build/*
