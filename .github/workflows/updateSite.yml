@@ -4,7 +4,31 @@ jobs:
   build:
     name: Start Workflow 
     runs-on: ubuntu-latest
+    container: 
+      image: jonasknebel/resolver_for_yaml_dependencies:latest  
     steps:
+      - name: install gulp 
+        run: |
+            nvm install 10
+            nvm use 10
+            nvm alias default 10
+            npm install -g gulp-cli
+            npm install
+            gulp bundle
+      - name: Add files
+          run: | 
+            git add ./build/*
+      - name: Commit files
+          run: |
+            git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git config --local user.name "github-actions[bot]"
+            git commit -m "Add changes" --allow-empty
+        - name: Pushing changes to current branch
+          uses: ad-m/github-push-action@master          
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            branch: ${{ github.ref }}  
+            force: true
       - name: Workflow Dispatch
         uses: benc-uk/workflow-dispatch@v1
         with:
