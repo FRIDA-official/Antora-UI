@@ -16,13 +16,13 @@ jobs:
             npm install
             gulp bundle
       - name: Add files
-          run: | 
-            git add ./build/*
+        run: | 
+          git add ./build/*
       - name: Commit files
-          run: |
-            git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git config --local user.name "github-actions[bot]"
-            git commit -m "Add changes" --allow-empty
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -m "Add changes" --allow-empty
       - name: Pushing changes to current branch
         uses: ad-m/github-push-action@master          
         with:
