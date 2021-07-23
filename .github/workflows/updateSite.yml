@@ -7,11 +7,8 @@ jobs:
     container: 
       image: jonasknebel/resolver_for_yaml_dependencies:latest  
     steps:
-      - name: install gulp 
+      - name: gulp
         run: |
-            nvm install 10
-            nvm use 10
-            nvm alias default 10
             npm install -g gulp-cli
             npm install
             gulp bundle
