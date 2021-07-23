@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: gulp
         run: |
-            npm install -g gulp-cli
+            npm install gulp-cli
             npm install
             gulp bundle
       - name: Add files
