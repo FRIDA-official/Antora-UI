@@ -9,8 +9,8 @@ jobs:
     steps:
       - name: gulp
         run: |
-            npm install gulp-cli
-            npm install
+            npm install --global gulp-cli
+            npm install --save-dev gulp
             gulp bundle
       - name: Add files
         run: | 
