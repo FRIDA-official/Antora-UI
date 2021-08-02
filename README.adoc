@@ -1,4 +1,4 @@
-= Antora Default UI
+= Antora Default ui
 // Settings:
 :experimental:
 :hide-uri-scheme:
