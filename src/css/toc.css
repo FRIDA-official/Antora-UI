@@ -6,6 +6,7 @@
   margin-right: 0.75rem;
   position: sticky;
   top: var(--toc-top);
+  margin-left: auto;
 }
 
 .toc .toc-menu h3 {
@@ -22,6 +23,7 @@
   flex-direction: column;
   height: 2.5rem;
   justify-content: flex-end;
+  margin-left: auto;
 }
 
 .toc .toc-menu ul {
@@ -36,6 +38,7 @@
   max-height: var(--toc-height);
   overflow-y: auto;
   scrollbar-width: none;
+  margin-left: auto;
 }
 
 .toc .toc-menu ul::-webkit-scrollbar {
