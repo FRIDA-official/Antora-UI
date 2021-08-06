@@ -14,8 +14,8 @@
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link" href="#">Languages</a>
           <div class="navbar-dropdown">
-            <a class="navbar-item" href="https://frida-official.github.io/Antora-FRIDA-Playbook/build/site/{{page.component.name}}/{{page.version}}/{{page.module}}/de/{{page.title}}.html">de</a>
-            <a class="navbar-item" href="https://frida-official.github.io/Antora-FRIDA-Playbook/build/site/{{page.component.name}}/{{page.version}}/{{page.module}}/en/{{page.title}}.html">en</a>
+            <a class="navbar-item" href="{{{relativize (resolvePageURL (concat 'de/' page.relativeSrcPath))}}}">de</a>
+            <a class="navbar-item" href="{{{relativize (resolvePageURL (concat 'en/' page.relativeSrcPath))}}}">en</a>
           </div>
         </div>
         <a class="navbar-item" target="_blank" href="https://freeinsurancedata.zulipchat.com/#narrow/stream/296496-general">Chat (Zulip)</a>
