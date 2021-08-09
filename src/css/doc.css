@@ -824,3 +824,7 @@ h1.page + aside.toc.embedded {
   hyphens: none;
   word-wrap: normal;
 }
+
+.yamlspec{
+  max-width: 100rem !important;
+}
