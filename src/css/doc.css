@@ -825,10 +825,8 @@ h1.page + aside.toc.embedded {
   word-wrap: normal;
 }
 
-.specdescription {
-  max-width: 52rem;
-}
+
 
 .yamlspec {
-  max-width: 100rem !important;
+  max-width: 100vw !important;
 }
