@@ -826,8 +826,7 @@ h1.page + aside.toc.embedded {
 }
 
 #redoc {
-  width: 95vw;
+  width: 87vw;
   position: relative;
   margin: 0 -2em;
-  padding-right: 10em;
 }
