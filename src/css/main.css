@@ -21,10 +21,11 @@
   aside.toc.embedded {
     display: none;
   }
-  /* aside.toc.sidebar {
-    /* flex: 0 0 var(--toc-width); 
-    order: 1;
-  } */
+
+  aside.toc.sidebar {
+    /* flex: 0 0 var(--toc-width); */
+    order: 0;
+  }
 }
 
 /* @media screen and (min-width: 1216px) {
