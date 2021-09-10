@@ -6,7 +6,7 @@
 <div class="nav-panel-menu is-active" style="visibility: hidden;" data-panel="menu">
   <nav class="nav-menu">
     {{#with @root.page.componentVersion}}
-    <h3 class="title"><a href="{{{relativize ./url}}}">{{./title}}</a></h3>-
+    <h3 class="title"><a href="{{page.component.name}}/{{page.version}}/{{page.module}}/de/{{page.module}}.html">{{./title}}</a></h3>-
     {{/with}}
 {{> nav-tree navigation=this}}
   </nav>
