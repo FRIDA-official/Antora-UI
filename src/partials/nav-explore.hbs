@@ -16,6 +16,7 @@
          {{~#if ./missing}} is-missing{{/if}}">
           <a href="{{{relativize ./url}}}">{{./displayVersion}}</a>
         </li>
+        <p>{{log ./url}}</p>
         {{/each}}
       </ul>
     </li>
