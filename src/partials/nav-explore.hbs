@@ -12,8 +12,8 @@
       <ul class="versions">
         {{#each ./versions}}
         <li class="version
-          {{~#if (and (eq .. @root.page.component) (eq this @root.page.componentVersion))}} is-current{{/if~}}
-          {{~#if (eq this ../latest)}} is-latest{{/if}}">
+           {{~#if (eq ./version @root.page.version)}} is-current{{/if~}}
+         {{~#if ./missing}} is-missing{{/if}}">
           <a href="{{{relativize ./url}}}">{{./displayVersion}}</a>
         </li>
         {{/each}}
@@ -23,3 +23,8 @@
   </ul>
 </div>
 <!--.substring(0, {{{relativize ./url}}}.length - 10) -->
+{{#each this}}
+    <a class="version
+      {{~#if (eq ./version @root.page.version)}} is-current{{/if~}}
+      {{~#if ./missing}} is-missing{{/if}}" href="{{{relativize ./url}}}">{{./displayVersion}}</a>
+    {{/each}}
