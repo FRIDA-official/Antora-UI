@@ -16,11 +16,10 @@
          {{~#if ./missing}} is-missing{{/if}}">
           <a href="{{{relativize ./url}}}">{{./displayVersion}}</a>
         </li>
-        <p>{{log ./url}}</p>
         {{/each}}
       </ul>
     </li>
     {{/each}}
-  </ul>
+  </ul><script>console.log({{log ./url}})</script>
 </div>
 <!--.substring(0, {{{relativize ./url}}}.length - 10) -->
