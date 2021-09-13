@@ -2,5 +2,6 @@
 
 module.exports = function () {
   return Array.from(arguments)
-    .substring(0, arguments.length - 10);
+    .slice(0, arguments.length - 1)
+    .join('')
 }
