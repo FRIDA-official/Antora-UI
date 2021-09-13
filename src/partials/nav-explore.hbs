@@ -14,7 +14,7 @@
         <li class="version
           {{~#if (and (eq .. @root.page.component) (eq this @root.page.componentVersion))}} is-current{{/if~}}
           {{~#if (eq this ../latest)}} is-latest{{/if}}">
-          <a href="{{(log ./url).replace(page.componentVersion.displayVersion, ./displayVersion)}}">{{./displayVersion}}</a>
+          <a href="{{log ./url}}">{{./displayVersion}}</a>
         </li>
         {{/each}}
       </ul>
