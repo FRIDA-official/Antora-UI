@@ -14,7 +14,7 @@
         <li class="version
           {{~#if (and (eq .. @root.page.component) (eq this @root.page.componentVersion))}} is-current{{/if~}}
           {{~#if (eq this ../latest)}} is-latest{{/if}}">
-          <a href="{{{relativize (resolvePageURL (concat page.relativeSrcPath))}}}"></a>
+          <a href="{{{concat site.url page.relativeSrcPath}}}">{{./displayVersion}}</a>
         </li>
         {{/each}}
       </ul>
