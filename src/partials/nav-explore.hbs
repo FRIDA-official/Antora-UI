@@ -14,7 +14,7 @@
         <li class="version
           {{~#if (and (eq .. @root.page.component) (eq this @root.page.componentVersion))}} is-current{{/if~}}
           {{~#if (eq this ../latest)}} is-latest{{/if}}">
-          <a href="{{concat (relativize ./url) test}}">{{./displayVersion}}</a>
+          <a href="{{concat (log ./url) test}}">{{./displayVersion}}</a>
         </li>
         {{/each}}
       </ul>
@@ -22,4 +22,5 @@
     {{/each}}
   </ul>
 </div>
+<script></script>
 <!--.substring(0, {{{relativize ./url}}}.length - 10)-->
