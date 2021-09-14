@@ -1,6 +1,7 @@
 @media screen and (max-width: 1023.5px) {
   aside.toc.sidebar {
     display: flex;
+    z-index: 3;
   }
 
   main > .content {
