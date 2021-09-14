@@ -11,6 +11,7 @@
   top: var(--navbar-height);
   z-index: var(--z-index-toolbar);
   margin-bottom: 5em;
+  z-index: 6;
 }
 
 .toolbar a {
